@@ -1,0 +1,1 @@
+arm-none-eabi-objcopy -O binary target/armv7a-none-eabi/debug/kernel kernel7.img
