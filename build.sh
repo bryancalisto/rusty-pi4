@@ -1,1 +1,0 @@
-cargo rustc -- -C link-arg=--script=./linker.ld
