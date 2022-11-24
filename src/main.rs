@@ -14,21 +14,21 @@ mod boot {
 pub extern "C" fn _start() -> ! {
     unsafe {
         // Turn pin21 into an output
-        core::ptr::write_volatile(0x3f20_0008 as *mut u32, 1 << 3);
+        core::ptr::write_volatile(0xfe20_0008 as *mut u32, 1 << 3);
 
         loop {
             // Turn on
-            core::ptr::write_volatile(0x3f20_001c as *mut u32, 1 << 21);
+            core::ptr::write_volatile(0xfe20_001c as *mut u32, 1 << 21);
 
             for _ in 1..50000 {
-                asm!("nop");
+                asm!("");
             }
 
             // Turn off
-            core::ptr::write_volatile(0x3f20_0028 as *mut u32, 1 << 21);
+            core::ptr::write_volatile(0xfe20_0028 as *mut u32, 1 << 21);
 
             for _ in 1..50000 {
-                asm!("nop");
+                asm!("");
             }
         }
     }
