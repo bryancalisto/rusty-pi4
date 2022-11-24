@@ -21,14 +21,14 @@ pub extern "C" fn _start() -> ! {
             core::ptr::write_volatile(0xfe20_001c as *mut u32, 1 << 21);
 
             for _ in 1..50000 {
-                asm!("");
+                asm!("nop");
             }
 
             // Turn off
             core::ptr::write_volatile(0xfe20_0028 as *mut u32, 1 << 21);
 
             for _ in 1..50000 {
-                asm!("");
+                asm!("nop");
             }
         }
     }
