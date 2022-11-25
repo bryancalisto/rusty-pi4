@@ -25,10 +25,9 @@ SECTIONS
       bss = .;
       *(.bss)
   }
-  . = ALIGN(4096);
   .ARM.exidx :
   {
-    *(.ARM.exidx)
+    *(.ARM.exidx*)
   }
   . = ALIGN(4096);
   __bss_end = .;
