@@ -1,6 +1,6 @@
 # rusty-pi4
 
-This repo contains a working version of the blinking LED 32-bit baremetal code inspired in the video [Low Level Learning's BAREMETAL RUST Runs on EVERYTHING](https://www.youtube.com/watch?v=jZT8APrzvc4) that can be run in the RPi 4.
+This repo contains a working version of the blinking LED **32-bit** baremetal code inspired in the video [Low Level Learning's BAREMETAL RUST Runs on EVERYTHING](https://www.youtube.com/watch?v=jZT8APrzvc4) that can be run in the RPi 4.
 
 I couldn't find a solid guide about it when doubts kicked in while I was trying to do it myself, so here I leave a guide about it that may
 clarify the path to others.
