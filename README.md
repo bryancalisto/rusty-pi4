@@ -12,5 +12,5 @@ RPi 3 uses a Broadcom BCM2837 ARM Cortex-A53 and the RPi 4 uses a Broadcom BCM27
 ### The boot files
 In the RPi 4 you have to use the files that have the '4' suffix: fixup4.dat and start4.elf. You don't need bootcode.bin because that code is now stored in the onboard EEPROM. [See here.](https://www.riscosopen.org/wiki/documentation/show/Software%20information:%20Raspberry%20Pi:%20Firmware)
 
-### The kernel img name
-The kernel img is expected to be called kernel7l.img (notice the 'l'). [See here.](https://www.raspberrypi.com/documentation/computers/config_txt.html#kernel)
+### The kernel name
+The kernel is expected to be called kernel7l.img (notice the 'l'). [See here.](https://www.raspberrypi.com/documentation/computers/config_txt.html#kernel)
